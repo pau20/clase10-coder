@@ -1,0 +1,63 @@
+header{
+	display: flex
+}
+.barraNav{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	width: 1200px;
+	justify-content: flex-end;
+	height: 96px;
+	background-image: linear-gradient(to left, #845EC2, #B39CD0, #FBEAFF, #00C9A7)
+}
+a{
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+	padding: 10px;
+	font-family: 'Fjalla One', sans-serif;
+}
+li{
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+}
+.barraLogo{
+	background-color: #00C9A7;
+}
+.cuerpo{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding: 40px;
+	font-size: 25px;
+	font-family: 'Fjalla One', sans-serif;
+	color: #B39CD0;
+}
+.textoUno{
+	padding: 40px;
+	font-size: 25px;
+	font-family: 'Fjalla One', sans-serif;
+	color: #B39CD0;
+	transition: all 2s,
+}
+.textoUno:hover{
+	padding: 50px;
+	font-size: 30px;
+	font-family: 'Dancing Script', cursive;;
+	color:#845EC2;
+}
+@keyframes primeraAnimacion{
+	0%{ width: 100%; }
+	25%{ transform: rotate(30deg); }
+	50%{width: 80%}
+	75%{transform: scale(1.5,1.5);}
+	100%{ width: 100%; }
+}
+.img{
+	animation-name: primeraAnimacion;
+	animation-duration: 5s;
+	animation-iteration-count: 2;
+	animation-timing-function: ease-in;
+	animation-delay: 1s;
+}
